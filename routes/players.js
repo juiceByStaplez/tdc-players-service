@@ -1,6 +1,6 @@
+require("dotenv").config();
 const express = require("express");
 const router = express.Router();
-require("dotenv").config();
 const fs = require("fs");
 const sqlite3 = require("sqlite3").verbose();
 const dbPath =
