@@ -6,7 +6,7 @@ const sqlite3 = require("sqlite3").verbose();
 const dbPath =
   process.env.app_env === "local"
     ? process.env.local_db_path
-    : process.env.dev_db_path;
+    : process.env.DEV_DB_PATH;
 
 const db = new sqlite3.Database(dbPath);
 
