@@ -15,10 +15,10 @@ let options = {};
 if (process.env.APP_ENV !== "local") {
   options = {
     cert: fs.readFileSync(
-      " /etc/letsencrypt/live/api.touchdownclub.net/fullchain.pem"
+      "/etc/letsencrypt/live/api.touchdownclub.net/fullchain.pem"
     ),
     key: fs.readFileSync(
-      " /etc/letsencrypt/live/api.touchdownclub.net/privkey.pem"
+      "/etc/letsencrypt/live/api.touchdownclub.net/privkey.pem"
     )
   };
 }
